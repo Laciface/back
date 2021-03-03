@@ -1,6 +1,6 @@
 <?
 
-class Template
+class   Template
 {
     var $templateContent;
 
