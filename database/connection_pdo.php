@@ -1,4 +1,7 @@
 <?php
+
+/*require_once(dirname(__FILE__) . "/setup.php");*/
+
 class DBConnection
 {
     public static function connectToDatabase(): ?PDO
@@ -19,5 +22,11 @@ class DBConnection
         }
         return null;
     }
+
+    public static function closeConnection(&$conn) {
+        $conn=null;
+    }
 }
+
+DBConnection::connectToDatabase()
 ?>
