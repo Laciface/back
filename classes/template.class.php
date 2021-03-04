@@ -1,10 +1,10 @@
 <?php
 
-class   Template
+class Template
 {
     public $templateContent;
 
-    function Template($file)
+    function __construct($file)
     {
         $this->templateContent = file_get_contents(dirname(__FILE__) . "/../templates/$file.html");
     }

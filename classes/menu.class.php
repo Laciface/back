@@ -4,7 +4,7 @@ class Menu
 {
     public array $queryResult = array();
 
-    function Menu()
+    function __construct()
     {
         $pdo = $this->pdo;
         $sql = 'SELECT * FROM `MENU` ORDER BY `POSITION` ASC';
