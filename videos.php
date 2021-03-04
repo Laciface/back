@@ -6,7 +6,7 @@ require_once(dirname(__FILE__) . "/menu.php");
 global $menu;
 $baseTemplate = new Template("base");
 
-$videos       = "";
+$videos = "";
 $videosResult = mysql_query(" SELECT * FROM `VIDEO_CONTENT` ");
 while ($row = mysql_fetch_assoc($videosResult)) {
     $videoTemplate = new Template("video");
