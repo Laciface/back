@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'bd44d2d5ee567be82df1ea9a82960e8d30e234f2',
+    'reference' => '4cc32350e0a908f91020beabca14e4b701cf2ec8',
     'name' => 'codecool-curriculum/back-to-the-future',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'bd44d2d5ee567be82df1ea9a82960e8d30e234f2',
+      'reference' => '4cc32350e0a908f91020beabca14e4b701cf2ec8',
     ),
     'doctrine/instantiator' => 
     array (
@@ -28,6 +28,15 @@
       array (
       ),
       'reference' => 'd56bf6102915de5702778fe20f2de3b2fe570b5b',
+    ),
+    'eftec/bladeone' => 
+    array (
+      'pretty_version' => '3.51',
+      'version' => '3.51.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '61e5d9b6fc6f565b525ac135e6b7e5161e1702c8',
     ),
     'myclabs/deep-copy' => 
     array (

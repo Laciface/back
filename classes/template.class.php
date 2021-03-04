@@ -1,8 +1,8 @@
-<?
+<?php
 
 class   Template
 {
-    var $templateContent;
+    public $templateContent;
 
     function Template($file)
     {

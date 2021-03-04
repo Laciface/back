@@ -14,7 +14,7 @@ class Menu
     {
         $this->pdo = DBConnection::connectToDatabase();
     }
-    private $menu = array();
+    public $menu = array();
 
     function Menu()
     {
