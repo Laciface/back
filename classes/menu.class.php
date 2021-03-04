@@ -2,10 +2,12 @@
 
 class Menu
 {
+    public ?PDO $pdo;
     public array $queryResult = array();
 
     function __construct()
     {
+        $this->pdo = DBConnection::connectToDatabase();
         $pdo = $this->pdo;
         $sql = 'SELECT * FROM `MENU` ORDER BY `POSITION` ASC';
         $stmt = $pdo->prepare($sql);

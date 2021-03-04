@@ -8,8 +8,13 @@ $baseTemplate = new Template("base");
 $infoTemplate = new Template("info");
 
 $tableBody  = "";
-$infoResult = mysql_query(" SELECT * FROM `INFO` ");
-while ($row = mysql_fetch_assoc($infoResult)) {
+
+$sql = 'SELECT * FROM `INFO`';
+$stmt = $menu->pdo->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
+
+foreach ($result as $row) {
     $tableBody = "$tableBody<tr><td>$row[LABEL]</td><td>$row[DATA]</td></tr>";
 }
 

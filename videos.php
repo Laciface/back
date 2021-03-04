@@ -7,8 +7,12 @@ global $menu;
 $baseTemplate = new Template("base");
 
 $videos = "";
-$videosResult = mysql_query(" SELECT * FROM `VIDEO_CONTENT` ");
-while ($row = mysql_fetch_assoc($videosResult)) {
+$sql = 'SELECT * FROM `VIDEO_CONTENT`';
+$stmt = $menu->pdo->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
+
+foreach ($result as $row) {
     $videoTemplate = new Template("video");
     $videos = $videos . $videoTemplate->render(array("video_label" => $row["LABEL"], "video_url" => $row["URL"]));
 }

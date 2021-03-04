@@ -2,7 +2,7 @@
 
 /*require_once(dirname(__FILE__) . "/setup.php");*/
 
-class DBConnection
+class DBConnection2
 {
     public static function connectToDatabase(): ?PDO
     {
