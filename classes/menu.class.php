@@ -1,8 +1,8 @@
-<?
+<?php
 
 class Menu
 {
-    public array $menu = array();
+    public array $queryResult = array();
 
     function Menu()
     {
@@ -13,7 +13,7 @@ class Menu
         $result = $stmt->fetchAll();
 
         foreach ($result as $row) {
-            array_push($this->menu, $row);
+            array_push($this->queryResult, $row);
         }
     }
 
