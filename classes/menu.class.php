@@ -2,14 +2,18 @@
 
 class Menu
 {
-    var $queryResult;
+    public array $menu = array();
 
     function Menu()
     {
-        $mySQLResult       = mysql_query(" SELECT * FROM `MENU` ORDER BY `POSITION` ASC ");
-        $this->queryResult = array();
-        while ($row = mysql_fetch_assoc($mySQLResult)) {
-            array_push($this->queryResult, $row);
+        $pdo = $this->pdo;
+        $sql = 'SELECT * FROM `MENU` ORDER BY `POSITION` ASC';
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+
+        foreach ($result as $row) {
+            array_push($this->menu, $row);
         }
     }
 

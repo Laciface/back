@@ -3,7 +3,7 @@
 
 use app\models\Question;
 
-class Menu
+class Menu2
 {
     private ?PDO $pdo;
 
