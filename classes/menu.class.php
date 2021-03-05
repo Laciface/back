@@ -1,5 +1,7 @@
 <?php
 
+include '../database/connect.php';
+
 class Menu
 {
     public ?PDO $pdo;
@@ -7,7 +9,7 @@ class Menu
 
     function __construct()
     {
-        $this->pdo = DBConnection::connectToDatabase();
+        $this->pdo = connect();
         $pdo = $this->pdo;
         $sql = 'SELECT * FROM `MENU` ORDER BY `POSITION` ASC';
         $stmt = $pdo->prepare($sql);
@@ -30,4 +32,6 @@ class Menu
     }
 }
 
+/*$example = new Menu();
+print_r($example->queryResult);*/
 ?>
