@@ -23,15 +23,13 @@ class Menu
 
     function render()
     {
-        $menuContent = "";
-        for ($i = 0; $i < count($this->queryResult); $i++) {
-            $menuContent = $menuContent . sprintf('<a href="%s">', $this->queryResult[$i]["FILE"]) . $this->queryResult[$i]["LABEL"] . "</a>&nbsp;";
+        $menuContent = '';
+        foreach($this->queryResult as $row){
+            $menuContent .= sprintf('<a href="%s">', $row["FILE"]) . $row["LABEL"] . "</a>&nbsp;";
         }
 
         return $menuContent;
     }
 }
 
-/*$example = new Menu();
-print_r($example->queryResult);*/
 ?>
