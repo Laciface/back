@@ -1,7 +1,7 @@
 <?php
 
-require_once(dirname(__FILE__) . "/classes/template.class.php");
-require_once(dirname(__FILE__) . "/menu.php");
+require_once __DIR__ . "/classes/template.class.php";
+require_once __DIR__ . "/menu.php";
 
 global $menu;
 $baseTemplate = new Template("base");
