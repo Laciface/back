@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Back to the Future</title>
+    <meta name="keywords" content="legacy app application php mysql" />
+    <meta name="description" content="This is a legacy application that uses PHP 5.3 and MySQL 5.5" />
+</head>
+<body style="background-color: #CAF1B9">
+@yield('menu_content')
+<br>
+@yield('body_content')
+</body>
+</html>

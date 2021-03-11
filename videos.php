@@ -14,7 +14,7 @@ $result = $stmt->fetchAll();
 
 foreach ($result as $row) {
     $videoTemplate = new Template("video");
-    $videos = $videos . $videoTemplate->render(array("video_label" => $row["LABEL"], "video_url" => $row["URL"]));
+    $videos .= $videoTemplate->render(array("video_label" => $row["LABEL"], "video_url" => $row["URL"]));
 }
 
 echo $baseTemplate->render(array("menu_content" => $menu->render(), "body_content" => $videos));
