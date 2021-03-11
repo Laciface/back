@@ -1,5 +1,5 @@
 <?php
-
+/*
 require_once __DIR__ . "/classes/template.class.php";
 require_once __DIR__ . "/menu.php";
 
@@ -11,5 +11,5 @@ echo $baseTemplate->render(array(
 ));
 
 require_once("./database/close.php");
-
+*/
 ?>
