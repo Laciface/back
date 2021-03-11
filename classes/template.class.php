@@ -6,7 +6,7 @@ class Template
 
     function __construct($file)
     {
-        $this->templateContent = file_get_contents(dirname(__FILE__) . "/../templates/$file.html");
+        $this->templateContent = file_get_contents(__DIR__ . "/../templates/$file.html");
     }
 
     function render($parameters = array())

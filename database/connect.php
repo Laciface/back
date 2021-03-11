@@ -6,7 +6,7 @@ global $settings;
 
 function connect()
 {
-    $servername = $GLOBALS["settings"]->host;
+    $servername = $GLOBALS['settings']->host;
     $username = $GLOBALS['settings']->user;
     $password = $GLOBALS['settings']->password;
     $dbname = $GLOBALS['settings']->database;
